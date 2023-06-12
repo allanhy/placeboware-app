@@ -1,0 +1,259 @@
+.patient {
+    display: flex;
+    background-color: #e0dd82;
+}
+
+.patient-background {
+    background-color: #e0dd82;
+    height: 100%;
+}
+
+.patient-breadcrumb {
+    padding: 1rem 3rem 1rem;
+    background-color: #e0dd82;
+}
+
+.patient-breadcrumb-bavaria {
+  padding: 1rem 3rem 1rem;
+  background-color: #c23734;
+}
+
+.patient-container {
+    display: flex;
+    flex-direction: column;
+    width: 92.6vw;
+    background-color: 'white';
+}
+
+.patient-top {
+    display: flex; 
+    align-items: center;
+    padding: 2rem;
+    background-color: 'white';
+}
+
+.patient-left {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1.1rem;
+    display: flex;
+    flex-basis: 33.33%;
+    flex-direction: column;
+}
+
+.patient-bottom-info {
+    padding: 2rem;
+    width: 395px;
+    height: auto;
+    background-color: 'white';
+}
+
+.patient-add-appointment {
+  padding: 2rem;
+  width: 95.5%;
+  height: auto;
+  background-color: 'white';
+}
+
+.patient-dose-notes {
+  padding: 2rem;
+  width: 95%;
+  height: auto;
+  background-color: 'white';
+}
+
+.patient-right-add {
+  padding-top: 2rem;
+  padding-right: 1.1rem;
+  flex-basis: 66.66%;
+  position: relative;
+}
+
+.patient-appointment {
+  padding-top: 2rem;
+  flex-basis: 100%;
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.patient-middle {
+    padding-top: 2rem;
+    padding-right: 1.1rem;
+    flex-basis: 33.33%;
+    position: relative;
+}
+
+.patient-left-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.patient-right {
+    padding-top: 2rem;
+    flex-basis: 33%;
+    position: relative;
+}
+
+.patient-hiv-info {
+    padding: 2rem;
+    width: 395px;
+    text-align: center;
+    height: auto;
+    background-color: 'white';
+}
+
+.something {
+    padding: 1rem 3rem 1rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.titleInfo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dose-container {
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 4px;
+    display: inline-block;
+  }
+
+  .results {
+    border: 1px solid black;
+    background-color: rgb(65, 159, 65);
+    padding: 4px;
+    display: inline-block;
+  }
+
+input,
+select,
+textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+    margin-bottom: 16px;
+}
+
+input:focus {
+    border-color: #0077ff;
+}
+
+.LoadingOverlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(214, 214, 214, 0.7);
+    z-index: 999;
+}
+
+@media screen and (max-width: 1440px) {
+    .patient {
+      flex-direction: column;
+      background-color: #e0dd82;
+      height: 100%;
+    }
+    
+    .patient-background {
+      height: 100%;
+    }
+    
+    .patient-breadcrumb {
+      padding: 1rem;
+    }
+    
+    .patient-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+    }
+    
+    .patient-top {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-color: white;
+      flex-basis: auto;
+    }
+    
+    .patient-left, .patient-middle, .patient-right, 
+    .patient-right-add, .patient-appointment {
+      padding-top: 2rem;
+      padding: 2rem;
+      padding-bottom: 2rem;
+      display: flex;
+      flex-basis: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .patient-left-right {
+      flex-direction: column;
+    }
+    
+    .patient-bottom-info, .patient-hiv-info, .patient-add-appointment {
+      padding: 2rem;
+      width: 100%;
+      height: auto;
+      background-color: white;
+    }
+
+    .something {
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    .titleInfo {
+      font-size: 18px;
+    }
+    
+    .dose-container {
+      border: 1px solid black;
+      background-color: yellow;
+      padding: 4px;
+      display: inline-block;
+    }
+    
+    input, select {
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s ease-in-out;
+      margin-bottom: 16px;
+    }
+    
+    input:focus {
+      border-color: #0077ff;
+    }
+    
+    .LoadingOverlay {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(214, 214, 214, 0.7);
+      z-index: 999;
+    }
+  }
+  

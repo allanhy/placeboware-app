@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+.BavariaPage {
+  padding: 1rem 3rem 1rem;
+  background-color: #c23734;
+  height: 100%;
+}
+
+.BavariaPage-body {
+  padding: 0rem 3rem 3rem 3rem;
+  background-color: #c23734;
+}
+
+.BavariaPage.loading {
+  pointer-events: none;
+}
+
+.breadcrumb {
+  padding: 1rem 3rem 1rem;
+  background-color: #c23734;
+}
+
+.BavariaPage.loading:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BavariaPage.loading .MuiCircularProgress-root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.BavariaPage-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.BavariaPage-link {
+  color: #61dafb;
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.submenu:hover {
+  cursor: pointer;
+  background-color: #e5e7ec;
+}
+
+.LoadingOverlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(214, 214, 214, 0.7);
+  z-index: 999;
+}
+
+.drug {
+  display: flex;
+  background-color: #c23734;
+}
+
+
+.drug-container {
+  display: flex;
+  flex-direction: column;
+  width: 92.6vw;
+  background-color: 'white';
+}
+
+.drug-top {
+  display: flex; 
+  align-items: center;
+  padding: 2rem;
+  background-color: 'white';
+}
+
+.something {
+  padding: 1rem 3rem 1rem;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.notificationDrug:hover {
+  background-color: rgba(214, 214, 214, 0.7);
+}
+
+.drugInformation:hover {
+  background-color: rgba(143, 140, 140, 0.7);
+}
+
+@media screen and (max-width: 1440px) {
+  .breadcrumb {
+    padding: 1rem;
+  }
+}

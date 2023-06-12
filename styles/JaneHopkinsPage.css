@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+.JaneHopkinsPage {
+  padding: 1rem 3rem 1rem;
+  background-color: #e0dd82;
+  height: 100%;
+}
+
+.JaneHopkinsPage-body {
+  padding: 0rem 3rem 3rem 3rem;
+  background-color: #e0dd82; 
+}
+
+.JaneHopkinsPage.loading {
+  pointer-events: none;
+}
+
+.JaneHopkinsPage.loading:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.JaneHopkinsPage.loading .MuiCircularProgress-root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.JaneHopkinsPage-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.JaneHopkinsPage-link {
+  color: #61dafb;
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.submenu:hover {
+  cursor: pointer;
+  background-color: #e5e7ec;
+}
+
+.LoadingOverlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(214, 214, 214, 0.7);
+  z-index: 999;
+}

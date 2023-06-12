@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+p {
+  font-family: 'Comfortaa', sans-serif; /* change font family to Arial or any other preferred sans-serif font */
+  justify-content: center;
+  font-size: 30px; /* set font size to 24 pixels or any other preferred size */
+  color: #0a0a0a; /* set the text color to dark gray */
+}
+
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Login-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Login-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Login-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Login-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.InputBox {
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.Button {
+  padding: 14px 26px;
+  border: none;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Button:hover {
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.834);
+}
+
+@media screen and (max-width: 768px) {
+  .Login {
+    flex-direction: column;
+  }
+}
+
+.LoadingOverlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(214, 214, 214, 0.7);
+  z-index: 999;
+}
